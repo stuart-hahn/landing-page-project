@@ -1,28 +1,39 @@
+/* Global Styles */
 * {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  line-height: 1.6;
+}
+
+/* Header */
 .header {
-  font-size: 24px;
+  padding: 10px;
   background-color: #1f2937;
   color: #f9faf8;
 }
 
 .top-nav {
   max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding: 10px 0;
+}
+
+.header-logo {
+  font-size: 24px;
 }
 
 .nav-links {
   display: flex;
   gap: 10px;
+  list-style: none;
 }
 
 .nav-link {
@@ -31,19 +42,29 @@
   text-decoration: none;
 }
 
+/* Hero Section */
+.hero-container {
+  padding: 10px;
+  background-color: #1f2937;
+}
 .hero {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
   gap: 40px;
   padding: 100px 0;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
 }
 
 .hero-text h2 {
   font-size: 48px;
   color: #f9faf8;
-  font-weight: 900;
-  line-height: 1;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .hero-text p {
@@ -54,44 +75,46 @@
 
 .btn-primary {
   background-color: #3882f6;
-  color: white;
+  color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
   border: none;
   margin-top: 10px;
+  cursor: pointer;
 }
 
+.hero-image img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Info Section */
 .info {
-  background-color: white;
+  background-color: #fff;
   color: #1f2937;
-  padding: 40px 0;
+  padding: 40px 10px;
+  text-align: center;
 }
 
 .info h2 {
-  text-align: center;
   font-size: 36px;
-  font-weight: 900;
-}
-
-.info p {
-  font-size: 16px;
-  color: #5e5e5e;
-  text-align: center;
-  margin-top: 10px;
+  font-weight: 700;
+  margin-bottom: 40px;
 }
 
 .cards {
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin: 40px 0;
+  flex-wrap: wrap;
 }
 
 .card {
   max-width: 150px;
-  display: flex;
-  flex-direction: column;
-  flex: auto;
+  flex: 1;
+  text-align: center;
 }
 
 .rectangle {
@@ -99,8 +122,16 @@
   height: 150px;
   border: 3px solid #3882f6;
   border-radius: 10px;
+  margin: 0 auto;
 }
 
+.card p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #5e5e5e;
+}
+
+/* Quote Section */
 .quote-section {
   background-color: #e5e7eb;
   color: #1f2937;
@@ -109,19 +140,24 @@
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 20px;
+  text-align: center;
 }
 
 .quote {
   font-size: 36px;
   font-style: italic;
+  margin-bottom: 10px;
 }
 
 .quote-source {
   font-weight: 700;
   text-align: right;
+  display: block;
+  margin-top: 10px;
 }
 
+/* Call to Action Section */
 .cta {
   background-color: #f9faf8;
 }
@@ -131,12 +167,18 @@
   color: #f9faf8;
   display: flex;
   justify-content: space-between;
-  padding: 40px 100px;
+  padding: 40px;
   border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.cta-text {
+  flex: 1;
 }
 
 .cta-header {
   font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .cta-subtext {
@@ -148,14 +190,17 @@
   background-color: #3882f6;
   color: #f9faf8;
   border-radius: 10px;
-  padding: 0 40px;
+  padding: 10px 40px;
   font-weight: 700;
   font-size: 18px;
+  cursor: pointer;
 }
 
+/* Footer */
 footer {
-  margin: 0 auto;
+  background-color: #1f2937;
+  color: #f9faf8;
   text-align: center;
-  padding: 40px 0;
+  padding: 20px 0;
   font-size: 18px;
 }
